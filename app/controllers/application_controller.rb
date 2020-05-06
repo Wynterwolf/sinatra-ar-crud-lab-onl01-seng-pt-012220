@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
   
-  post '/posts' do
+  post '/articles' do
     Post.create(parms)
     redirect '/posts'
   end
